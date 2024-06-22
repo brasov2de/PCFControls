@@ -1,11 +1,11 @@
 import {IInputs, IOutputs} from "./generated/ManifestTypes";
+// eslint-disable-next-line no-undef
 import DataSetInterfaces = ComponentFramework.PropertyHelper.DataSetApi;
 type DataSet = ComponentFramework.PropertyTypes.DataSet;
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import {CalendarControl, IProps} from "./CalendarControl"
-import * as Color from 'color'
-var isHexColor = require('is-hexcolor');
+
 
 export class Calendar implements ComponentFramework.StandardControl<IInputs, IOutputs> {
 

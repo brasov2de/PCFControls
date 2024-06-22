@@ -3,14 +3,13 @@ import * as React from 'react';
 import clsx from 'clsx'
 import * as Color from 'color'
 import { ToolbarProps, NavigateAction, View, Messages } from 'react-big-calendar'
-import { Dropdown, DropdownMenuItemType, IDropdownStyles, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
-import { CommandBarButton, IButtonProps } from 'office-ui-fabric-react/lib/Button';
-import { CommandBar, ICommandBarItemProps, ICommandBarData, } from 'office-ui-fabric-react/lib/CommandBar';
-import { IContextualMenuItemProps, IContextualMenuItem, ContextualMenuItem,  IContextualMenuItemStyles,  IContextualMenuStyles,} from 'office-ui-fabric-react/lib/ContextualMenu';
-import { getTheme, concatStyleSets } from 'office-ui-fabric-react/lib/Styling';
-import { IButtonStyles } from 'office-ui-fabric-react/lib/Button';
-import { memoizeFunction } from 'office-ui-fabric-react/lib/Utilities';
-import { initializeIcons } from '@uifabric/icons';
+import { CommandBarButton, IButtonProps } from '@fluentui/react/lib/Button';
+import { CommandBar, ICommandBarItemProps, ICommandBarData, } from '@fluentui/react/lib/CommandBar';
+import { IContextualMenuItemProps, IContextualMenuItem, ContextualMenuItem,  IContextualMenuItemStyles,  IContextualMenuStyles,} from '@fluentui/react/lib/ContextualMenu';
+import { getTheme, concatStyleSets } from '@fluentui/react/lib/Styling';
+import { IButtonStyles } from '@fluentui/react/lib/Button';
+import { memoizeFunction } from '@fluentui/react/lib/Utilities';
+import { initializeIcons } from "@fluentui/react/lib/Icons";
 import {useSwipeable} from 'react-swipeable';
 
 const overflowProps: IButtonProps = { ariaLabel: 'More commands' };

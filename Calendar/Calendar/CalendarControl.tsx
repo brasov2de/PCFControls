@@ -7,6 +7,7 @@
 
 import * as React from 'react';
 import {IInputs} from "./generated/ManifestTypes";
+// eslint-disable-next-line no-undef
 import DataSetInterfaces = ComponentFramework.PropertyHelper.DataSetApi;
 import { Calendar, momentLocalizer, Event, View, ViewsProps, Culture } from 'react-big-calendar'
 import GetMessages from './Translations'
@@ -15,7 +16,8 @@ import * as lcid from 'lcid';
 import * as Color from 'color'
 import {MobileToolbar, ToolbarColor} from './MobileToolbar'
 import { inherits } from 'util';
-var CustomWorkWeek = require('./MyWorkWeek');
+import CustomWorkWeek from './MyWorkWeek';
+// eslint-disable-next-line no-undef
 var isHexColor = require('is-hexcolor');
 
 export interface IProps {
@@ -587,7 +589,7 @@ function getCalendarViews(pcfContext: ComponentFramework.Context<IInputs>) : Vie
     else{
         validViews.forEach((view: string) => {
             if (view === 'work_week'){
-                selectedViews.work_week = CustomWorkWeek.default;                
+                selectedViews.work_week = CustomWorkWeek.defaultProps;                
                 selectedViews.work_week.includedDays = getWorkWeekExcludedDays(pcfContext)                
             }
             else{
