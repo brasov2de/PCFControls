@@ -1,6 +1,5 @@
 import * as PropTypes from 'prop-types'
 import * as React from 'react';
-import clsx from 'clsx'
 import * as Color from 'color'
 import { ToolbarProps, NavigateAction, View, Messages } from 'react-big-calendar'
 import { CommandBarButton, IButtonProps } from '@fluentui/react/lib/Button';
